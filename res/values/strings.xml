@@ -18,7 +18,7 @@ limitations under the License.
 <resources>
 
     <!-- the name of your theme -->
-    <string name="app_name">Stock Theme</string>
+    <string name="app_name">Sci-Fi 01</string>
 
     <!-- the alignment for each of your textviews in a message, can be left, center, or right -->
     <string name="alignment_sent_text">right</string>

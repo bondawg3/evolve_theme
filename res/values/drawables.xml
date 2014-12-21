@@ -27,6 +27,6 @@ limitations under the License.
     <!-- system bars because it looks awkward - it doesn't go behind the -->
     <!-- navigation bar at the bottom or the emoji keyboard when it is on the -->
     <!-- screen.                                                              -->
-    <drawable name="sendbar">@android:color/white</drawable>
+    <drawable name="sendbar">@android:color/holo_green_dark</drawable>
 
 </resources>
