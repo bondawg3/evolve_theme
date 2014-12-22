@@ -36,8 +36,8 @@ limitations under the License.
     <!-- the message entry color is for any message entry areas in the main window and the new message window -->
     <color name="messageEntryColor">#020202</color>
 
-    <!-- the color of the background for the drawer -->
-    <color name="drawerBackground">#ffffff</color>
+    <!-- the color of the background for the drawer | Color: Purple -->
+    <color name="drawerBackground">#9C57D4</color>
 
     <!-- the color of the conversation drawer text -->
     <color name="conversationTextColor">#020202</color>

@@ -22,6 +22,11 @@ limitations under the License.
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+    <!-- My Picture in the Conversation w/Image Border
+    Modificaton | Changed original alignment from bottom of the message bubble to the top.
+    Original | android:layout_alignParentBottom="true"
+    -->
+
     <ImageView
             android:layout_width="48dp"
             android:layout_height="48dp"
@@ -32,16 +37,27 @@ limitations under the License.
             android:minHeight="48dp"
             android:minWidth="48dp"
             android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_marginBottom="3dp"
-            android:layout_marginLeft="-10dp"/>
+            android:layout_marginLeft="-10dp"
+        android:padding="3dp"
+        android:background="@drawable/contact_image_border" />
+
+
+    <!-- Sets the distance between message bubbles
+    Added | android:layout_alignParentTop="true"
+    Modified | android:layout_marginBottom="20dp"
+    -->
 
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+        android:layout_height="match_parent"
             android:layout_toLeftOf="@+id/myPicture"
+            android:layout_marginBottom="20dp"
             android:id="@+id/holder">
+
+        <!-- test comment -->
 
         <ImageView
                 android:layout_width="48dp"
@@ -54,6 +70,8 @@ limitations under the License.
                 android:minWidth="48dp"
                 android:layout_marginRight="-11dp"/>
 
+        <!-- test comment -->
+
         <LinearLayout
                 android:id="@+id/background"
                 android:layout_width="0dp"
@@ -63,6 +81,8 @@ limitations under the License.
                 android:gravity="center_vertical"
                 android:orientation="vertical">
 
+            <!-- Display of Name in MMS Message -->
+
             <TextView
                     android:id="@+id/name"
                     android:layout_width="wrap_content"
@@ -71,10 +91,13 @@ limitations under the License.
                     android:layout_gravity="center_vertical"
                     android:paddingRight="5dp"
                     android:textSize="12sp"
-                    android:fontFamily="sans-serif-light"
+                    android:fontFamily="sans-serif"
                     android:textColor="@color/dateColorReceived"
+                    android:background="#5aff990a"
                     android:layout_marginTop="-3dp"
                     android:paddingBottom="3dp"/>
+
+            <!-- Display of MMS Image -->
 
             <ImageView
                     android:layout_width="200dp"
@@ -84,13 +107,19 @@ limitations under the License.
                     android:id="@+id/media"
                     android:padding="10dp"
                     android:visibility="gone"
-                    android:scaleType="centerInside"/>
+                    android:scaleType="centerInside"
+                    android:background="#5af5ff3e"/>
+
+            <!-- test comment -->
 
             <View    android:id="@+id/gifView"
                      android:layout_width="200dp"
                      android:layout_height="wrap_content"
                      android:padding="10dp"
-                     android:visibility="gone"/>
+                     android:visibility="gone" />
+
+            <!-- body of just the text of the message
+                 does not include the whole message bubble -->
 
             <TextView
                     android:id="@+id/body"
@@ -100,8 +129,11 @@ limitations under the License.
                     android:paddingRight="5dp"
                     android:textSize="14sp"
                     android:fadingEdge="horizontal"
+                    android:fontFamily="sans-serif-light"
                     android:textColor="@color/textColorReceived"
                     android:layout_marginTop="-3dp"/>
+
+            <!-- Display of Date -->
 
             <TextView
                     android:id="@+id/date"
@@ -112,7 +144,8 @@ limitations under the License.
                     android:visibility="visible"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-light"
+                    android:textStyle="italic"
+                    android:fontFamily="sans-serif"
                     android:textColor="@color/dateColorReceived"
                     android:layout_marginBottom="-3dp"/>
 

@@ -29,4 +29,6 @@ limitations under the License.
     <!-- screen.                                                              -->
     <drawable name="sendbar">@android:color/holo_green_dark</drawable>
 
+    <!-- <drawable name="contactImageBorder">@android:color/holo_green_dark</drawable> -->
+
 </resources>
