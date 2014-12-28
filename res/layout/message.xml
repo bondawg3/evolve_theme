@@ -22,29 +22,32 @@ limitations under the License.
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-    <!-- My Picture in the Conversation w/Image Border
+    <!-- Users Picture in the Conversation w/Image Border (Right Side)
     Modificaton | Changed original alignment from bottom of the message bubble to the top.
     Original | android:layout_alignParentBottom="true"
+    Adds Border Image | android:background="@drawable/contact_image_border"
+    Original Image Size | 48dp
     -->
 
     <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:id="@+id/myPicture"
             android:scaleType="centerCrop"
-            android:maxHeight="48dp"
-            android:maxWidth="48dp"
-            android:minHeight="48dp"
-            android:minWidth="48dp"
+            android:maxHeight="60dp"
+            android:maxWidth="60dp"
+            android:minHeight="60dp"
+            android:minWidth="60dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:layout_marginBottom="3dp"
             android:layout_marginLeft="-10dp"
         android:padding="3dp"
-        android:background="@drawable/contact_image_border" />
+        android:background="@drawable/monitor_contact_frame_left" />
 
 
-    <!-- Sets the distance between message bubbles
+    <!-- Container for the Message Bubbles
+    Sets the distance between message bubbles
     Added | android:layout_alignParentTop="true"
     Modified | android:layout_marginBottom="20dp"
     -->
@@ -57,18 +60,25 @@ limitations under the License.
             android:layout_marginBottom="20dp"
             android:id="@+id/holder">
 
-        <!-- test comment -->
+        <!-- Contact's Picture in the Conversation w/Image Border (Left Side)
+        Default | android:layout_marginRight="-11dp"
+         -->
 
         <ImageView
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:id="@+id/contactPicture"
                 android:scaleType="centerCrop"
-                android:maxHeight="48dp"
-                android:maxWidth="48dp"
-                android:minHeight="48dp"
-                android:minWidth="48dp"
-                android:layout_marginRight="-11dp"/>
+                android:maxHeight="120dp"
+                android:maxWidth="120dp"
+                android:minHeight="120dp"
+                android:minWidth="120dp"
+            android:layout_marginRight="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:background="@drawable/monitor_contact_frame_left"/>
 
         <!-- test comment -->
 

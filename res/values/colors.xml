@@ -24,7 +24,7 @@ limitations under the License.
 
     <!-- the text color drawn on the message for the body -->
     <color name="textColorSent">#020202</color>
-    <color name="textColorReceived">#020202</color>
+    <color name="textColorReceived">#132A66</color>
 
     <!-- the text color drawn on the message for the date -->
     <color name="dateColorSent">#555555</color>
